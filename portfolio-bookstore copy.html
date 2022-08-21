@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aldo's Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo"> 
+                <img alt="bookstore" src="./img/premiumlogo/onlinelogomaker-081822-2116-1811.png">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Technical Skill Set</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact me</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                <a href="https://bookstore-rose.vercel.app/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #16e0bd;">
+                <strong>BookStore</strong>
+                </a>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">e-commerce platform</p>
+            <img src="img/bookstore.PNG" alt="" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <p><a href="https://bookstore-rose.vercel.app/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #16e0bd;"><strong>BookStore</strong></a>  is a fully functional platform built to commercialize electronic books. The design offers a user-friendly experience with scalable potential. It was the final project to graduate from <a href="https://www.soyhenry.com/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: white;"><strong>Henry's Full Stack Developer Bootcamp</strong></a>. It was a team project comprised of 8 members.
+            </p>
+            <div class="iframe-container">
+                <iframe src="https://www.youtube.com/embed/Nj_oaV7BKZc?vq=hd1080&autoplay=1&loop=1&rel=0&fs=0&playlist=Nj_oaV7BKZc" width="560" height="315" title="Presenting BookStore" frameborder="0"></iframe>
+            </div>
+            <p><strong>Functionalities</strong> included: dynamic auto-complete searches, filters, sorting, pagination, CRUD operations involving users, books, reviews, favorites, cart for purchases, payment method, historical transactional searches for the users, an administrative section to handle users, books, reviews, authentication and authorization, different types of analysis and emailing</p>
+            <p><strong>Tech Stack</strong>: JavaScript, React, Redux Toolkit, CSS, Sass, SweetAlert2, Firebase, Node.js, Express, Sequelize, PostgreSQL, JsonWebToken, Nodemailer, Auth0, MercadoPago, Axios and finally for deployment, Vercel and Heroku. Additionally, the SCRUM methodology was adopted.</p>
+            <p>Visit the web site: 
+                <a href="https://bookstore-rose.vercel.app/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #16e0bd;"> <strong>BookStore</strong> <a>or visit the</a>
+                </a> 
+                <a href="https://github.com/AM4772/Henry-PF" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #16e0bd;"> <strong>GitHub Repository</strong>
+                </a>
+            </p>
+        </div>
+        
+        
+        <!-- Footer -->
+        <footer class="footer" id="contact">
+            <!-- replace with your own email address -->
+            <a href="mailto:hello@jane.dev" class="footer__link">moro_bramanti@hotmail.com</a>
+            <ul class="social-list">
+                <!--
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://codepen.io">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="http://dribbble.com">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                </li>
+                -->
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://linkedin.com/in/aldo-moro">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/AM4772">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="footer__image">
+                <p class="footer__text">Created by</p>  
+                <img alt="small-logo" src="./img/premiumlogo/onlinelogomaker-081822-2116-1811.png" width="48" height="30">
+            </div>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>
