@@ -37,7 +37,6 @@
 
 /* General styles */
 
-
 html {
     scroll-behavior: smooth;
 }
@@ -401,48 +400,59 @@ header {
 
 /* My Work */
 
-.my-work {
-    background-color: var(--clr-light);
-    color: var(--clr-dark);
-    text-align: center;    
+@media (min-width: 600px) {
+
+    .my-work {
+        background-color: var(--clr-light);
+        color: var(--clr-dark);
+        text-align: center;
+    }
+
+    .portfolio {
+        display: grid;
+        grid-gap: 0.5em;
+        /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+        grid-template-areas: "photoOne photoTwo";
+        grid-template-columns: 290px 290px;
+        align-content: space-between;
+        justify-content: space-around;
+    }
+
+    .portfolio__item {
+        position: relative;
+        background: var(--clr-accent);
+        overflow: hidden;
+    }
+
+    .portfolio__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 
+            transform 750ms cubic-bezier(.5, 0, .5, 1),
+            opacity 250ms linear;
+    }
+
+    .portfolio-centered-text-img {
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .portfolio__item:focus {
+        position: relative;
+        z-index: 2;
+    }
+
+    .portfolio__img:hover,
+    .portfolio__item:focus .portfolio__img {
+        transform: scale(1.2);
+        opacity: .5;
+    }
+
 }
-
-.portfolio {
-    display: grid;
-    grid-gap: 0.5em;
-    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
-    grid-template-areas: "photoOne photoTwo";
-    grid-template-columns: 290px 290px;
-    align-content: space-between;
-    justify-content: space-around;
-
-}
-
-.portfolio__item {
-    background: var(--clr-accent);
-    overflow: hidden;
-}
-
-.portfolio__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: 
-        transform 750ms cubic-bezier(.5, 0, .5, 1),
-        opacity 250ms linear;
-}
-
-.portfolio__item:focus {
-    position: relative;
-    z-index: 2;
-}
-
-.portfolio__img:hover,
-.portfolio__item:focus .portfolio__img {
-    transform: scale(1.2);
-    opacity: .5;
-}
-
 
 /* footer */
 
