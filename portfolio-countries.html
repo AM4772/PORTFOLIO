@@ -1,72 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="icon" href="favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Countries SPA</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
-        
-        <!-- Update these with your own fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-        
-        <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Aldo Moro" />
+    <meta name="description" content="First Project: Countries SPA" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries SPA</title>
+    <link
+      rel="icon"
+      href="./img/premiumlogo/onlinelogomaker-081822-2116-1811bis.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
 
-    </head>
-    <body class="portfolio-page-body">
-        <header>
-            <div class="logo"> 
-                <img alt="am-logo" src="./img/premiumlogo/onlinelogomaker-081822-2116-1811.png">
-            </div>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Technical Skill Set</a></li>
-                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact me</a></li>
-                </ul>
-            </nav>
-        </header>
-        
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+  </head>
+  <body class="portfolio-page-body">
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img
+            alt="am-logo"
+            src="./img/premiumlogo/onlinelogomaker-081822-2116-1811.png"
+            alt="AM Logo"
+            title="AM Logo"
+          />
+        </a>
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#services" class="nav__link"
+              >My Technical Skill Set</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="index.html#work" class="nav__link">My Work</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-        <section class="intro">
-            <h1 class="section__title section__title--intro">
-                <a href="https://pi-countries-app.vercel.app/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #16e0bd;">
-                <strong>Countries</strong>
-                </a>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">single-page app</p>
-            <img src="img/countries1.png" alt="" class="intro__img">
-        </section>
-        
-        <div class="portfolio-item-individual">
-            <p><a href="https://pi-countries-app.vercel.app/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #16e0bd;"><strong>Countries</strong></a>  is a SPA built to search for touristic activities in different countries. This project was a mandatory individual challenge within the <a href="https://www.soyhenry.com/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #303030;"><strong>Henry's Full Stack Developer Bootcamp</strong></a>. It was a pre-requisite to move on to the final project.
-            </p>
-            <div class="iframe-container">
-                <img src="img/countries2.png"/>
-            </div>
-            <p>Minimum <strong>Functionalities </strong>that were required: landing page, a home page with a navigation bar, search by country name, filters by continent and activity, sorting, pagination, a details card for each country, creating an activity with multiple countries and functionality to delete countries from the form, a relational database, connection to external api and, finally, a nice design.</p>
-            <p>The <strong>Tech Stack </strong>was deliberately limited to: JavaScript, ReactJs, Redux, HTML, CSS, Node.js, ExpressJs, Sequelize and PostgreSQL.</p>
-            <p>Visit the web site: 
-                <a href="https://pi-countries-app.vercel.app/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #16e0bd;"> <strong>Countries</strong> <a>or visit the</a>
-                </a> 
-                <a href="https://github.com/AM4772/PI---Countries-App" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #16e0bd;"> <strong>GitHub Repository</strong>.
-                </a>
-            </p>
-        </div>
-        
-        
-        <!-- Footer -->
-        <footer class="footer" id="contact">
-            <!-- replace with your own email address -->
-            <a href="mailto:hello@jane.dev" class="footer__link">moro_bramanti@hotmail.com</a>
-            <ul class="social-list">
-                <!--
+    <section class="intro">
+      <h1 class="section__title section__title--intro">
+        <a
+          href="https://pi-countries-app.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="text-decoration: none; color: #16e0bd"
+        >
+          <strong>Countries</strong>
+        </a>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">single-page app</p>
+      <img src="img/countries1.png" alt="" class="intro__img" />
+    </section>
+
+    <div class="portfolio-item-individual">
+      <p>
+        <a
+          href="https://pi-countries-app.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="text-decoration: none; color: #16e0bd"
+          ><strong>Countries</strong></a
+        >
+        is a SPA built to search for touristic activities in different
+        countries. This project was a mandatory individual challenge within the
+        <a
+          href="https://www.soyhenry.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="text-decoration: none; color: #303030"
+          ><strong>Henry's Full Stack Developer Bootcamp</strong></a
+        >. It was a pre-requisite to move on to the final project.
+      </p>
+      <div class="iframe-container">
+        <img src="img/countries2.png" alt="" />
+      </div>
+      <p>
+        Minimum <strong>Functionalities </strong>that were required: landing
+        page, a home page with a navigation bar, search by country name, filters
+        by continent and activity, sorting, pagination, a details card for each
+        country, creating an activity with multiple countries and functionality
+        to delete countries from the form, a relational database, connection to
+        external api and, finally, a nice design.
+      </p>
+      <p>
+        The <strong>Tech Stack </strong>was deliberately limited to: JavaScript,
+        ReactJs, Redux, HTML, CSS, Node.js, ExpressJs, Sequelize and PostgreSQL.
+      </p>
+      <p>
+        Visit the web site:
+        <a
+          href="https://pi-countries-app.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="text-decoration: none; color: #16e0bd"
+        >
+          <strong>Countries</strong> <a>or visit the</a>
+        </a>
+        <a
+          href="https://github.com/AM4772/PI---Countries-App"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="text-decoration: none; color: #16e0bd"
+        >
+          <strong>GitHub Repository</strong>.
+        </a>
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <!-- replace with your own email address -->
+      <a href="mailto:hello@jane.dev" class="footer__link"
+        >moro_bramanti@hotmail.com</a
+      >
+      <ul class="social-list">
+        <!--
                 <li class="social-list__item">
                     <a class="social-list__link" href="https://codepen.io">
                         <i class="fab fa-codepen"></i>
@@ -78,30 +156,53 @@
                     </a>
                 </li>
                 -->
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://linkedin.com/in/aldo-moro">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com/AM4772">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com/AM4772/PORTFOLIO/blob/main/AM-CV.pdf" download>
-                        <i class="fas fa-file-pdf"></i> <strong style="font-size: 15px;">download cv</strong> 
-                    </a>
-                </li>
-            </ul>
-            <div class="footer__image">
-                <p class="footer__text">Created by</p>  
-                <img alt="small-logo" src="./img/premiumlogo/onlinelogomaker-081822-2116-1811.png" width="48" height="30">
-            </div>
-        </footer>
-        
-        
-        <script src="js/index.js"></script>
-        
-    </body>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://linkedin.com/in/aldo-moro"
+            title="LinkedIn Profile"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://github.com/AM4772"
+            title="GitHub Profile"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://github.com/AM4772/PORTFOLIO/blob/main/AM-CV.pdf"
+            download
+          >
+            <i class="fas fa-file-pdf"></i>
+            <strong style="font-size: 15px">download cv</strong>
+          </a>
+        </li>
+      </ul>
+      <div class="footer__image">
+        <p class="footer__text">
+          Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </p>
+        <a href="index.html">
+          <img
+            alt="small-logo"
+            src="./img/premiumlogo/onlinelogomaker-081822-2116-1811.png"
+            width="48"
+            height="30"
+          />
+        </a>
+      </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
 </html>

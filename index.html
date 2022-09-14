@@ -1,83 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="icon" href="./img/premiumlogo/onlinelogomaker-081822-2116-1811bis.png" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>AM Portfolio</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
-        
-        <!-- Update these with your own fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-        
-        <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Aldo Moro" />
+    <meta
+      name="description"
+      content="This page is the official site for Aldo Moro's Portfolio"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AM Portfolio</title>
+    <link
+      rel="icon"
+      href="./img/premiumlogo/onlinelogomaker-081822-2116-1811bis.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
 
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <img src="./img/premiumlogo/onlinelogomaker-081822-2116-1811.png" alt="">
-            </div>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">My Technical Skill Set</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact me</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <!-- Introduction -->
-        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
-                Hi, I am <strong>Aldo</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">full-stack dev</p>
-            <img src="img/linkedin.png" alt="a picture of Aldo smiling" class="intro__img">
-        </section>
+    <!-- Update these with your own fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
 
-        <!-- About me -->
-        <div class="about-me-container">
-            <section class="about-me" id="about">
-                <h2 class="section__title section__title--about">Who I am</h2>
-                <p class="section__subtitle section__subtitle--about">Full Stack Developer based out of Argentina</p>                
-                <div class="about-me__body">
-                    <p>I'm a husband, a father and a Full Stack Developer. I have a serious passion for creating intuitive, dynamic, fast and responsive user experiences. </p>
-                    <p><a href="mailto:moro_bramanti@hotmail.com" style="font-style: italic;"><strong>Let's make something special.</strong></a></p>
-                </div>
-                <a href="#work" class="btn">My Work</a>
-                <img src="img/standuppic.jpg" alt="Stdup" class="about-me__img">
-            </section>
-        </div>         
-        
-        <!-- My Skill Set -->
-        <section class="my-services" id="services">
-            <h2 class="section__title section__title--services">My Technical Skill Set</h2>
-            <div class="services">
-                <div class="service">
-                    <!--<h3>Web  Development</h3>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img
+            src="./img/premiumlogo/onlinelogomaker-081822-2116-1811.png"
+            alt="AM Logo"
+            title="AM Logo"
+          />
+        </a>
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Technical Skill Set</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Aldo</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">full-stack dev</p>
+      <img
+        src="img/linkedin.png"
+        alt="a picture of Aldo smiling"
+        class="intro__img"
+      />
+    </section>
+
+    <!-- About me -->
+    <div class="about-me-container">
+      <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">
+          Full Stack Developer based out of Argentina
+        </p>
+        <div class="about-me__body">
+          <p>
+            I'm a husband, a father and a Full Stack Developer. I have a serious
+            passion for creating intuitive, dynamic, fast and responsive user
+            experiences.
+          </p>
+          <p>
+            <a href="mailto:moro_bramanti@hotmail.com"
+              ><strong>Let's make something special.</strong></a
+            >
+          </p>
+        </div>
+        <a href="#work" class="btn">My Work</a>
+        <img src="img/standuppic.jpg" alt="Stdup" class="about-me__img" />
+      </section>
+    </div>
+
+    <!-- My Skill Set -->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">
+        My Technical Skill Set
+      </h2>
+      <div class="services">
+        <div class="service">
+          <!--<h3>Web  Development</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>-->
-                    <img src="img/html-5.png" alt="html5" class="service__img">   
-                    <img src="img/css-3.png" alt="css" class="service__img"> 
-                    <img src="img/sass-lang-icon.svg" alt="sass" class="service__img"> 
-                    <img src="img/js.png" alt="js" class="service__img"> 
-                    <img src="img/reactjs-icon.svg" alt="reactjs" class="service__img">
-                    <img src="img/redux.png" alt="redux" class="service__img">
-                    <img src="img/nodejs.png" alt="nodejs" class="service__img">
-                    <img src="img/express-js.png" alt="expressjs" class="service__img">
-                    <img src="img/sequelizejs-ar21.svg" alt="sequelize" class="service__img">
-                    <img src="img/postgresql.png" alt="postgresql" class="service__img">
-                    <img src="img/auth0-ar21.svg" alt="auth0" class="service__img">
-                    <img src="img/git-scm-ar21.svg" alt="git" class="service__img">
-                    <img src="img/github-ar21.svg" alt="github" class="service__img">
-                </div>
-                <!-- / services
+          <img src="img/html-5.png" alt="html5" class="service__img" />
+          <img src="img/css-3.png" alt="css" class="service__img" />
+          <img src="img/sass-lang-icon.svg" alt="sass" class="service__img" />
+          <img src="img/js.png" alt="js" class="service__img" />
+          <img src="img/reactjs-icon.svg" alt="reactjs" class="service__img" />
+          <img src="img/redux.png" alt="redux" class="service__img" />
+          <img src="img/nodejs.png" alt="nodejs" class="service__img" />
+          <img src="img/express-js.png" alt="expressjs" class="service__img" />
+          <img
+            src="img/sequelizejs-ar21.svg"
+            alt="sequelize"
+            class="service__img"
+          />
+          <img src="img/postgresql.png" alt="postgresql" class="service__img" />
+          <img src="img/auth0-ar21.svg" alt="auth0" class="service__img" />
+          <img src="img/git-scm-ar21.svg" alt="git" class="service__img" />
+          <img src="img/github-ar21.svg" alt="github" class="service__img" />
+        </div>
+        <!-- / services
                 <div class="service">
                     <h3>E-Commerce</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -88,27 +142,34 @@
                     <h3>WordPress</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>-->
-            </div>  
-        </section>      
-        
+      </div>
+    </section>
 
-        <!-- My Work -->
-        <section class="my-work" id="work">
-            <h2 class="section__title section__title--work">My work</h2>
-            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
-            
-            <div class="portfolio">
+    <!-- My Work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">My work</h2>
+      <p class="section__subtitle section__subtitle--work">
+        A selection of my range of work
+      </p>
 
-                <a href="portfolio-bookstore.html" class="portfolio__item" target="_blank">
-                    <img src="img/library.jpg" alt="" class="portfolio__img">
-                    <h3 class="portfolio-centered-text-img">BookStore</h3>
-                </a>                
-               
-                <a href="portfolio-countries.html" class="portfolio__item" target="_blank">
-                    <img src="img/countries.jpg" alt="" class="portfolio__img">
-                    <h3 class="portfolio-centered-text-img">Countries</h3>
-                </a>
-            <!--               
+      <div class="portfolio">
+        <a
+          href="portfolio-bookstore.html"
+          class="portfolio__item"
+          target="_blank"
+        >
+          <img src="img/library2.jpg" alt="" class="portfolio__img" />
+          <!-- <h3 class="portfolio-centered-text-img">BookStore</h3> -->
+        </a>
+        <a
+          href="portfolio-countries.html"
+          class="portfolio__item"
+          target="_blank"
+        >
+          <img src="img/countries2.jpg" alt="" class="portfolio__img" />
+          <!-- <h3 class="portfolio-centered-text-img">Countries</h3> -->
+        </a>
+        <!--               
                 <a href="portfolio-item.html" class="portfolio__item">
                     <img src="img/portfolio-03.png" alt="" class="portfolio__img">
                 </a>                
@@ -141,16 +202,20 @@
                     <img src="img/portfolio-10.jpg" alt="" class="portfolio__img">
                 </a>
             -->
-            </div>
-        </section>
-        
-        
-        <!-- Footer -->
-        <footer class="footer" id="contact">
-            <!-- replace with your own email address -->
-            <a href="mailto:moro_bramanti@hotmail.com" class="footer__link">moro_bramanti@hotmail.com</a>
-            <ul class="social-list">
-                <!--
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <!-- replace with your own email address -->
+      <a href="mailto:moro_bramanti@hotmail.com" class="footer__link"
+        >moro_bramanti@hotmail.com</a
+      >
+      <p>
+        <a href="#">Back to Top</a>
+      </p>
+      <ul class="social-list">
+        <!--
                 <li class="social-list__item">
                     <a class="social-list__link" href="https://codepen.io">
                         <i class="fab fa-codepen"></i>
@@ -162,30 +227,46 @@
                     </a>
                 </li>
                 -->
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://linkedin.com/in/aldo-moro">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com/AM4772">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="AM-CV.pdf" download target="_blank">
-                        <i class="fas fa-file-pdf"></i> <strong style="font-size: 15px;">download cv</strong> 
-                    </a>
-                </li>
-            </ul>
-            <div class="footer__image">
-                <p class="footer__text">Created by</p>  
-                <img alt="small-logo" src="./img/premiumlogo/onlinelogomaker-081822-2116-1811.png" width="48" height="30">
-            </div>
-        </footer>
-        
-        
-        <script src="js/index.js"></script>
-        
-    </body>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://linkedin.com/in/aldo-moro">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/AM4772">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="AM-CV.pdf"
+            download
+            target="_blank"
+          >
+            <i class="fas fa-file-pdf"></i>
+            <strong style="font-size: 15px">download cv</strong>
+          </a>
+        </li>
+      </ul>
+      <div class="footer__image">
+        <p class="footer__text">
+          Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </p>
+        <a href="index.html">
+          <img
+            alt="small-logo"
+            src="./img/premiumlogo/onlinelogomaker-081822-2116-1811.png"
+            width="48"
+            height="30"
+          />
+        </a>
+      </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
 </html>
