@@ -158,7 +158,13 @@ header {
 }
 
 .logo {
+  position: fixed;
   max-width: 100px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
 }
 
 .nav {
@@ -202,7 +208,7 @@ header {
   background: transparent;
   border: 0;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   right: 1em;
   top: 1em;
   z-index: 1000;
