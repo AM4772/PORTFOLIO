@@ -26,7 +26,7 @@
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
-@media (min-width: 800px) {
+@media screen and (min-width: 800px) {
   :root {
     --fs-h1: 4.5rem;
     --fs-h2: 3.75rem;
@@ -159,11 +159,12 @@ header {
 
 .logo {
   position: fixed;
-  max-width: 100px;
+  max-width: 4em;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  margin-top: 0.25em;
   z-index: 100;
 }
 
@@ -278,7 +279,7 @@ header {
   display: inline-block;
 }
 
-@media (min-width: 576px) {
+@media screen and (min-width: 576px) {
   .intro {
     display: grid;
     width: min-content;
@@ -349,7 +350,7 @@ header {
   margin: 0 auto;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .services {
     display: flex;
     max-width: 1000px;
@@ -382,7 +383,7 @@ header {
   margin-top: 18px;
 }
 
-@media (min-width: 576px) {
+@media screen and (min-width: 576px) {
   .about-me {
     display: grid;
     grid-template-columns: 1fr 200px;
@@ -416,7 +417,7 @@ header {
 
 /* My Work */
 
-@media (min-width: 576px) {
+@media screen and (min-width: 576px) {
   .my-work {
     background-color: var(--clr-light);
     color: var(--clr-dark);
@@ -424,23 +425,24 @@ header {
   }
 
   .portfolio {
-    display: grid;
-    grid-gap: 0.5em;
-    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
-    grid-template-areas: "photoOne photoTwo";
-    grid-template-columns: 290px 290px;
-    align-content: space-between;
-    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 1rem;
+    border-radius: 15px;
+    gap: 1rem;
+    justify-content: center;
   }
 
   .portfolio__item {
-    position: relative;
-    background: var(--clr-accent);
-    overflow: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
   }
 
   .portfolio__img {
-    width: 100%;
+    max-width: 300px;
     height: 100%;
     object-fit: cover;
     transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1),
@@ -497,6 +499,26 @@ header {
 
 .footer__link:hover {
   text-decoration: underline;
+}
+
+.footer__back-to-top {
+  color: inherit;
+  margin: 0;
+  text-decoration: none;
+  padding: 0.2em;
+  border: 2px solid var(--clr-accent);
+  border-radius: 7px;
+  font-size: var(--fs-body);
+  font-weight: var(--fw-bold);
+  text-align: center;
+}
+
+.footer__back-to-top:hover {
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
+  text-decoration: none;
+  opacity: 0.7;
+  transition: all 2s ease-in-out 0.5s;
 }
 
 .footer__image {
